@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Puriva Water | The Essence of Pure Life</title>
+  <meta name="description" content="Puriva Water by Sarvorly Beverages Pvt. Ltd. — Pure, hygienic, and refreshing packaged drinking water for homes, offices &amp; businesses in Odisha, India." />
+  <meta name="keywords" content="Puriva Water, packaged drinking water, pure water Odisha, Sarvorly Beverages, mineral water, water distributor Odisha, Balianta, Khordha" />
+  <meta name="author" content="Sarvorly Beverages Pvt. Ltd." />
+  <link rel="canonical" href="https://www.purivawater.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.purivawater.com/" />
+  <meta property="og:title"       content="Puriva Water | The Essence of Pure Life" />
+  <meta property="og:description" content="Safe, hygienic &amp; refreshing packaged drinking water. Puriva Water — The Essence of Pure Life." />
+  <meta property="og:image"       content="https://www.purivawater.com/images/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Puriva Water | The Essence of Pure Life" />
+  <meta name="twitter:description" content="Safe, hygienic &amp; refreshing packaged drinking water." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind (Play CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:   '#0B3C8C',
+            'primary-dark': '#072d6a',
+            secondary: '#3AA7FF',
+          },
+          fontFamily: {
+            poppins: ['Poppins','sans-serif'],
+            inter:   ['Inter','sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-poppins bg-white text-gray-800 antialiased">
+
+<!-- ===== LOADING SCREEN ===== -->
+<div id="loading-screen">
+  <div class="loading-logo">Puriva Water</div>
+  <div class="loading-tagline">The Essence of Pure Life</div>
+  <div class="loading-track"><div class="loading-fill"></div></div>
+</div>
+
+<!-- ===== SCROLL PROGRESS ===== -->
+<div id="scroll-progress"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background:transparent;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-20">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:rgba(255,255,255,0.15);">
+          <i class="fas fa-tint text-white text-lg"></i>
+        </div>
+        <div>
+          <span class="text-white font-bold text-xl leading-none block">Puriva</span>
+          <span class="text-blue-200 text-xs font-light tracking-widest">WATER</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="#about"    class="nav-link text-white/90 hover:text-white text-sm font-medium">About</a></li>
+        <li><a href="#products" class="nav-link text-white/90 hover:text-white text-sm font-medium">Products</a></li>
+        <li><a href="#process"  class="nav-link text-white/90 hover:text-white text-sm font-medium">Process</a></li>
+        <li><a href="#gallery"  class="nav-link text-white/90 hover:text-white text-sm font-medium">Gallery</a></li>
+        <li><a href="#contact"  class="nav-link text-white/90 hover:text-white text-sm font-medium">Contact</a></li>
+        <li><a href="distributor.html" class="nav-link text-white/90 hover:text-white text-sm font-medium">Distributors</a></li>
+        <li>
+          <a href="#contact" class="btn-primary text-white text-sm font-semibold px-5 py-2.5 rounded-full">
+            Order Now
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button id="menu-btn" class="md:hidden text-white w-10 h-10 flex items-center justify-center focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden">
+      <ul class="py-4 space-y-1" style="background:rgba(11,60,140,0.97);border-radius:0 0 16px 16px;padding:1.5rem;">
+        <li><a href="#about"    class="block text-white/90 py-2 px-3 rounded-lg hover:bg-white/10 text-sm font-medium">About</a></li>
+        <li><a href="#products" class="block text-white/90 py-2 px-3 rounded-lg hover:bg-white/10 text-sm font-medium">Products</a></li>
+        <li><a href="#process"  class="block text-white/90 py-2 px-3 rounded-lg hover:bg-white/10 text-sm font-medium">Process</a></li>
+        <li><a href="#gallery"  class="block text-white/90 py-2 px-3 rounded-lg hover:bg-white/10 text-sm font-medium">Gallery</a></li>
+        <li><a href="#contact"  class="block text-white/90 py-2 px-3 rounded-lg hover:bg-white/10 text-sm font-medium">Contact</a></li>
+        <li><a href="distributor.html" class="block text-white/90 py-2 px-3 rounded-lg hover:bg-white/10 text-sm font-medium">Distributors</a></li>
+        <li class="pt-2">
+          <a href="#contact" class="block text-center btn-primary text-white font-semibold px-5 py-2.5 rounded-full text-sm">Order Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero" class="min-h-screen flex items-center justify-center relative">
+  <!-- Background overlay -->
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse at 70% 50%, rgba(58,167,255,0.15), transparent 60%);"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full pt-28 pb-20">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left: Text -->
+      <div data-aos="fade-right" data-aos-duration="900">
+        <div class="inline-block bg-white/10 border border-white/20 text-white text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
+          ✦ Sarvorly Beverages Pvt. Ltd.
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          Pure Drinking<br />
+          Water You Can<br />
+          <span class="gradient-text-light">Trust.</span>
+        </h1>
+        <p class="text-blue-100 text-lg leading-relaxed mb-8 max-w-md">
+          Puriva Water delivers safe, hygienic, and refreshing drinking water for homes,
+          offices, and businesses — straight from nature's heart.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="btn-accent text-white font-bold px-8 py-3.5 rounded-full text-sm inline-flex items-center gap-2">
+            <i class="fas fa-shopping-cart"></i> Order Now
+          </a>
+          <a href="#about" class="btn-secondary font-bold px-8 py-3.5 rounded-full text-sm inline-flex items-center gap-2">
+            <i class="fas fa-play-circle"></i> Learn More
+          </a>
+        </div>
+
+        <!-- Quick trust badges -->
+        <div class="flex flex-wrap gap-6 mt-10">
+          <div class="flex items-center gap-2 text-white/80 text-sm">
+            <i class="fas fa-shield-alt text-secondary"></i> BIS Certified
+          </div>
+          <div class="flex items-center gap-2 text-white/80 text-sm">
+            <i class="fas fa-leaf text-secondary"></i> Eco Friendly
+          </div>
+          <div class="flex items-center gap-2 text-white/80 text-sm">
+            <i class="fas fa-check-circle text-secondary"></i> Quality Tested
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Bottle -->
+      <div class="flex items-center justify-center" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+        <div class="relative">
+          <!-- Glow ring -->
+          <div class="absolute inset-0 rounded-full" style="background:radial-gradient(circle, rgba(58,167,255,0.3), transparent 70%); transform:scale(1.3);"></div>
+          <!-- Bottle SVG illustration -->
+          <div class="hero-bottle relative z-10 flex items-center justify-center">
+            <svg viewBox="0 0 200 400" width="260" height="420" xmlns="http://www.w3.org/2000/svg">
+              <!-- Cap -->
+              <rect x="75" y="10" width="50" height="36" rx="8" fill="#3AA7FF" />
+              <rect x="70" y="40" width="60" height="12" rx="4" fill="#2290e8" />
+              <!-- Neck -->
+              <path d="M80 52 Q72 75 65 95 L135 95 Q128 75 120 52 Z" fill="rgba(240,248,255,0.95)" />
+              <!-- Body -->
+              <path d="M65 95 Q55 110 52 140 L52 310 Q52 340 100 340 Q148 340 148 310 L148 140 Q145 110 135 95 Z"
+                    fill="rgba(230,244,255,0.92)" />
+              <!-- Water fill -->
+              <path d="M54 200 L54 310 Q54 336 100 336 Q146 336 146 310 L146 200 Q125 210 100 208 Q75 210 54 200 Z"
+                    fill="rgba(58,167,255,0.35)" />
+              <!-- Label -->
+              <rect x="58" y="150" width="84" height="100" rx="8" fill="#0B3C8C" />
+              <text x="100" y="188" text-anchor="middle" font-family="Poppins,sans-serif" font-size="16" font-weight="800" fill="white">Puriva</text>
+              <text x="100" y="205" text-anchor="middle" font-family="Poppins,sans-serif" font-size="9"  font-weight="400" fill="rgba(255,255,255,0.75)">WATER</text>
+              <text x="100" y="230" text-anchor="middle" font-family="Poppins,sans-serif" font-size="6.5" fill="rgba(255,255,255,0.6)">THE ESSENCE OF PURE LIFE</text>
+              <!-- Shine -->
+              <path d="M70 110 Q73 130 70 210" stroke="rgba(255,255,255,0.5)" stroke-width="4" fill="none" stroke-linecap="round" />
+              <path d="M80 100 Q82 115 80 160" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-linecap="round" />
+              <!-- Bottom -->
+              <ellipse cx="100" cy="335" rx="48" ry="8" fill="rgba(0,0,80,0.12)" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave bottom -->
+  <div class="absolute bottom-0 left-0 right-0 pointer-events-none">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="white"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== STATS STRIP ===== -->
+<section class="py-12" style="background:linear-gradient(135deg,#0B3C8C,#1565c0);">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="stat-card p-6" data-aos="fade-up" data-aos-delay="0">
+        <div class="text-4xl font-black text-white" data-count="500" data-suffix="+">0+</div>
+        <div class="text-blue-200 text-sm mt-1">Happy Clients</div>
+      </div>
+      <div class="stat-card p-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="text-4xl font-black text-white" data-count="50" data-suffix="+">0+</div>
+        <div class="text-blue-200 text-sm mt-1">Distributors</div>
+      </div>
+      <div class="stat-card p-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="text-4xl font-black text-white" data-count="5">0</div>
+        <div class="text-blue-200 text-sm mt-1">Product Variants</div>
+      </div>
+      <div class="stat-card p-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="text-4xl font-black text-white" data-count="100" data-suffix="%">0%</div>
+        <div class="text-blue-200 text-sm mt-1">Pure Quality</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="py-24 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left visual -->
+      <div class="relative" data-aos="fade-right">
+        <div class="rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
+          <!-- Placeholder — replace src with actual image -->
+          <img src="images/test3.jpeg" alt="Puriva Water bottles by the water" class="w-full h-full object-cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="hidden flex-col items-center justify-center text-center p-8 w-full h-full" style="display:none;">
+            <i class="fas fa-tint text-6xl mb-4" style="color:#3AA7FF;"></i>
+            <p class="text-gray-400 text-sm">Add your image to <code>images/gallery-1.jpg</code></p>
+          </div>
+        </div>
+        <!-- Floating badge -->
+        <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:linear-gradient(135deg,#0B3C8C,#3AA7FF);">
+            <i class="fas fa-award text-white text-xl"></i>
+          </div>
+          <div>
+            <div class="font-bold text-gray-800 text-sm">ISI Certified</div>
+            <div class="text-gray-400 text-xs">BIS Standard</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right text -->
+      <div data-aos="fade-left">
+        <div class="section-badge">About Puriva</div>
+        <h2 class="text-4xl font-black text-gray-900 mt-2 mb-6 leading-tight">
+          Committed to<br />
+          <span class="gradient-text">Pure, Safe &amp; Refreshing</span><br />
+          Drinking Water
+        </h2>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          Puriva Water by <strong>Sarvorly Beverages Pvt. Ltd.</strong> is committed to delivering
+          safe, hygienic, and refreshing drinking water. Our advanced purification process ensures
+          every drop is clean, mineral-balanced, and safe for everyday hydration.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-8">
+          Founded with the vision of making pure water accessible across Odisha, we combine
+          cutting-edge technology with rigorous quality checks at every step — from source
+          to seal. Puriva Water is more than a product; it's a promise of health and purity.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="products.html" class="btn-primary text-white font-semibold px-7 py-3 rounded-full inline-flex items-center gap-2 text-sm">
+            <i class="fas fa-box-open"></i> Explore Products
+          </a>
+          <a href="#contact" class="border-2 font-semibold px-7 py-3 rounded-full inline-flex items-center gap-2 text-sm transition-all hover:bg-gray-50"
+             style="border-color:#0B3C8C; color:#0B3C8C;">
+            <i class="fas fa-envelope"></i> Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products" class="py-24" style="background:linear-gradient(180deg,#f0f7ff 0%,#ffffff 100%);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <div class="section-badge">Our Products</div>
+      <h2 class="text-4xl font-black text-gray-900 mt-3 mb-4">
+        Available <span class="gradient-text">Pack Sizes</span>
+      </h2>
+      <p class="text-gray-500 max-w-xl mx-auto">From single servings to bulk jars — Puriva Water is available in sizes that suit every need.</p>
+      <div class="section-underline mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+      <!-- 250ml -->
+      <div class="product-card bg-white rounded-2xl shadow-lg p-5 text-center" data-aos="fade-up" data-aos-delay="0">
+        <div class="bottle-placeholder mb-4">
+          <svg viewBox="0 0 80 160" width="60" class="bottle-img" xmlns="http://www.w3.org/2000/svg">
+            <rect x="28" y="4" width="24" height="16" rx="4" fill="#3AA7FF"/>
+            <path d="M32 20 Q28 30 26 40 L54 40 Q52 30 48 20 Z" fill="rgba(220,240,255,0.9)"/>
+            <path d="M26 40 Q22 48 22 60 L22 130 Q22 145 40 145 Q58 145 58 130 L58 60 Q58 48 54 40 Z" fill="rgba(220,240,255,0.9)"/>
+            <path d="M23 100 L23 130 Q23 142 40 142 Q57 142 57 130 L57 100 Q45 105 40 104 Q35 105 23 100 Z" fill="rgba(58,167,255,0.3)"/>
+            <rect x="26" y="65" width="28" height="40" rx="4" fill="#0B3C8C"/>
+            <text x="40" y="82" text-anchor="middle" font-family="Poppins" font-size="6" font-weight="700" fill="white">Puriva</text>
+            <text x="40" y="93" text-anchor="middle" font-family="Poppins" font-size="4" fill="rgba(255,255,255,0.7)">WATER</text>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-800 text-base">300 ml</h3>
+        <p class="text-gray-500 text-xs mt-1 mb-3">Perfect pocket-size bottle for on-the-go hydration</p>
+        <a href="products.html" class="text-xs font-semibold px-4 py-1.5 rounded-full text-white inline-block" style="background:#0B3C8C;">View Details</a>
+      </div>
+
+      <!-- 500ml -->
+      <div class="product-card bg-white rounded-2xl shadow-lg p-5 text-center" data-aos="fade-up" data-aos-delay="80">
+        <div class="bottle-placeholder mb-4">
+          <svg viewBox="0 0 80 190" width="60" class="bottle-img" xmlns="http://www.w3.org/2000/svg">
+            <rect x="27" y="4" width="26" height="18" rx="4" fill="#3AA7FF"/>
+            <path d="M31 22 Q26 35 24 48 L56 48 Q54 35 49 22 Z" fill="rgba(220,240,255,0.9)"/>
+            <path d="M24 48 Q20 58 20 72 L20 155 Q20 170 40 170 Q60 170 60 155 L60 72 Q60 58 56 48 Z" fill="rgba(220,240,255,0.9)"/>
+            <path d="M21 115 L21 155 Q21 167 40 167 Q59 167 59 155 L59 115 Q45 120 40 118 Q35 120 21 115 Z" fill="rgba(58,167,255,0.3)"/>
+            <rect x="24" y="80" width="32" height="48" rx="4" fill="#0B3C8C"/>
+            <text x="40" y="100" text-anchor="middle" font-family="Poppins" font-size="6.5" font-weight="700" fill="white">Puriva</text>
+            <text x="40" y="113" text-anchor="middle" font-family="Poppins" font-size="4.5" fill="rgba(255,255,255,0.7)">WATER</text>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-800 text-base">500 ml</h3>
+        <p class="text-gray-500 text-xs mt-1 mb-3">Most popular size for daily hydration and outings</p>
+        <a href="products.html" class="text-xs font-semibold px-4 py-1.5 rounded-full text-white inline-block" style="background:#0B3C8C;">View Details</a>
+      </div>
+
+      <!-- 1L — Featured -->
+      <div class="product-card bg-white rounded-2xl shadow-xl p-5 text-center border-2" style="border-color:#3AA7FF;" data-aos="fade-up" data-aos-delay="160">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+          <span class="bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap" style="background:#3AA7FF;">Best Seller</span>
+        </div>
+        <div class="bottle-placeholder mb-4" style="background:linear-gradient(160deg,#d0ecff,#a8d8ff);">
+          <svg viewBox="0 0 80 220" width="62" class="bottle-img" xmlns="http://www.w3.org/2000/svg">
+            <rect x="26" y="4" width="28" height="20" rx="5" fill="#3AA7FF"/>
+            <path d="M30 24 Q25 40 23 55 L57 55 Q55 40 50 24 Z" fill="rgba(210,238,255,0.9)"/>
+            <path d="M23 55 Q18 67 18 82 L18 180 Q18 198 40 198 Q62 198 62 180 L62 82 Q62 67 57 55 Z" fill="rgba(210,238,255,0.9)"/>
+            <path d="M19 135 L19 180 Q19 195 40 195 Q61 195 61 180 L61 135 Q45 141 40 139 Q35 141 19 135 Z" fill="rgba(58,167,255,0.3)"/>
+            <rect x="22" y="95" width="36" height="55" rx="5" fill="#0B3C8C"/>
+            <text x="40" y="117" text-anchor="middle" font-family="Poppins" font-size="7.5" font-weight="800" fill="white">Puriva</text>
+            <text x="40" y="130" text-anchor="middle" font-family="Poppins" font-size="5" fill="rgba(255,255,255,0.7)">WATER</text>
+            <text x="40" y="142" text-anchor="middle" font-family="Poppins" font-size="4" fill="rgba(255,255,255,0.5)">1 Litre</text>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-800 text-base">1 Litre</h3>
+        <p class="text-gray-500 text-xs mt-1 mb-3">Great for home &amp; office use throughout the day</p>
+        <a href="products.html" class="text-xs font-semibold px-4 py-1.5 rounded-full text-white inline-block" style="background:#3AA7FF;">View Details</a>
+      </div>
+
+      <!-- 2L -->
+      <div class="product-card bg-white rounded-2xl shadow-lg p-5 text-center" data-aos="fade-up" data-aos-delay="240">
+        <div class="bottle-placeholder mb-4">
+          <svg viewBox="0 0 90 240" width="64" class="bottle-img" xmlns="http://www.w3.org/2000/svg">
+            <rect x="28" y="4" width="34" height="22" rx="5" fill="#3AA7FF"/>
+            <path d="M33 26 Q27 45 25 62 L65 62 Q63 45 57 26 Z" fill="rgba(220,240,255,0.9)"/>
+            <path d="M25 62 Q19 76 19 94 L19 200 Q19 220 45 220 Q71 220 71 200 L71 94 Q71 76 65 62 Z" fill="rgba(220,240,255,0.9)"/>
+            <path d="M20 155 L20 200 Q20 217 45 217 Q70 217 70 200 L70 155 Q54 162 45 160 Q36 162 20 155 Z" fill="rgba(58,167,255,0.3)"/>
+            <rect x="24" y="108" width="42" height="62" rx="5" fill="#0B3C8C"/>
+            <text x="45" y="132" text-anchor="middle" font-family="Poppins" font-size="8" font-weight="800" fill="white">Puriva</text>
+            <text x="45" y="147" text-anchor="middle" font-family="Poppins" font-size="5.5" fill="rgba(255,255,255,0.7)">WATER</text>
+            <text x="45" y="161" text-anchor="middle" font-family="Poppins" font-size="4.5" fill="rgba(255,255,255,0.5)">2 Litres</text>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-800 text-base">2 Litres</h3>
+        <p class="text-gray-500 text-xs mt-1 mb-3">Ideal for family meals and extended outings</p>
+        <a href="products.html" class="text-xs font-semibold px-4 py-1.5 rounded-full text-white inline-block" style="background:#0B3C8C;">View Details</a>
+      </div>
+
+      <!-- 20L Jar -->
+      <div class="product-card bg-white rounded-2xl shadow-lg p-5 text-center" data-aos="fade-up" data-aos-delay="320">
+        <div class="bottle-placeholder mb-4" style="height:200px;">
+          <svg viewBox="0 0 120 200" width="90" class="bottle-img" xmlns="http://www.w3.org/2000/svg">
+            <!-- Jar shape -->
+            <rect x="40" y="4" width="40" height="20" rx="6" fill="#3AA7FF"/>
+            <path d="M38 24 Q34 36 32 50 L88 50 Q86 36 82 24 Z" fill="rgba(210,238,255,0.9)"/>
+            <path d="M32 50 Q26 64 26 80 L26 162 Q26 182 60 182 Q94 182 94 162 L94 80 Q94 64 88 50 Z" fill="rgba(210,238,255,0.9)"/>
+            <path d="M27 125 L27 162 Q27 178 60 178 Q93 178 93 162 L93 125 Q72 132 60 130 Q48 132 27 125 Z" fill="rgba(58,167,255,0.3)"/>
+            <rect x="30" y="88" width="60" height="70" rx="6" fill="#0B3C8C"/>
+            <text x="60" y="114" text-anchor="middle" font-family="Poppins" font-size="9" font-weight="800" fill="white">Puriva</text>
+            <text x="60" y="129" text-anchor="middle" font-family="Poppins" font-size="6" fill="rgba(255,255,255,0.7)">WATER</text>
+            <text x="60" y="146" text-anchor="middle" font-family="Poppins" font-size="5" fill="rgba(255,255,255,0.5)">20 Litre Jar</text>
+          </svg>
+        </div>
+        <h3 class="font-bold text-gray-800 text-base">20 Litre Jar</h3>
+        <p class="text-gray-500 text-xs mt-1 mb-3">Bulk supply for offices, restaurants &amp; events</p>
+        <a href="products.html" class="text-xs font-semibold px-4 py-1.5 rounded-full text-white inline-block" style="background:#0B3C8C;">View Details</a>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-10" data-aos="fade-up">
+      <a href="products.html" class="inline-flex items-center gap-2 font-semibold text-sm px-8 py-3 rounded-full border-2" style="border-color:#0B3C8C;color:#0B3C8C;">
+        View All Products <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PURIFICATION PROCESS ===== -->
+<section id="process" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <div class="section-badge">Our Process</div>
+      <h2 class="text-4xl font-black text-gray-900 mt-3 mb-4">
+        5-Stage <span class="gradient-text">Purification Process</span>
+      </h2>
+      <p class="text-gray-500 max-w-xl mx-auto">Every bottle of Puriva Water passes through a rigorous 5-stage purification system to ensure purity, safety, and freshness.</p>
+      <div class="section-underline mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+
+      <div class="text-center relative" data-aos="fade-up" data-aos-delay="0">
+        <div class="step-icon-wrap">
+          <i class="fas fa-filter"></i>
+        </div>
+        <div class="text-xs font-bold tracking-widest uppercase mb-2" style="color:#3AA7FF;">Step 01</div>
+        <h3 class="font-bold text-gray-800 mb-2">Source Filtration</h3>
+        <p class="text-gray-500 text-sm">Removal of large sediments and impurities from raw water source.</p>
+      </div>
+
+      <div class="text-center relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="step-icon-wrap">
+          <i class="fas fa-tint"></i>
+        </div>
+        <div class="text-xs font-bold tracking-widest uppercase mb-2" style="color:#3AA7FF;">Step 02</div>
+        <h3 class="font-bold text-gray-800 mb-2">Reverse Osmosis</h3>
+        <p class="text-gray-500 text-sm">Advanced RO membrane removes dissolved salts, heavy metals &amp; bacteria.</p>
+      </div>
+
+      <div class="text-center relative" data-aos="fade-up" data-aos-delay="200">
+        <div class="step-icon-wrap">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="text-xs font-bold tracking-widest uppercase mb-2" style="color:#3AA7FF;">Step 03</div>
+        <h3 class="font-bold text-gray-800 mb-2">UV Purification</h3>
+        <p class="text-gray-500 text-sm">UV rays destroy all residual micro-organisms for germ-free water.</p>
+      </div>
+
+      <div class="text-center relative" data-aos="fade-up" data-aos-delay="300">
+        <div class="step-icon-wrap">
+          <i class="fas fa-atom"></i>
+        </div>
+        <div class="text-xs font-bold tracking-widest uppercase mb-2" style="color:#3AA7FF;">Step 04</div>
+        <h3 class="font-bold text-gray-800 mb-2">Ozonation</h3>
+        <p class="text-gray-500 text-sm">Ozone treatment ensures extended freshness and no chemical taste.</p>
+      </div>
+
+      <div class="text-center relative" data-aos="fade-up" data-aos-delay="400">
+        <div class="step-icon-wrap">
+          <i class="fas fa-microscope"></i>
+        </div>
+        <div class="text-xs font-bold tracking-widest uppercase mb-2" style="color:#3AA7FF;">Step 05</div>
+        <h3 class="font-bold text-gray-800 mb-2">Quality Testing</h3>
+        <p class="text-gray-500 text-sm">Rigorous lab testing before packaging to meet BIS standards.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE PURIVA ===== -->
+<section id="why" class="py-24" style="background:linear-gradient(180deg,#f0f7ff,#ffffff);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <div class="section-badge">Why Puriva</div>
+      <h2 class="text-4xl font-black text-gray-900 mt-3 mb-4">
+        Why Choose <span class="gradient-text">Puriva Water?</span>
+      </h2>
+      <p class="text-gray-500 max-w-xl mx-auto">We go beyond purification — delivering a complete water experience built on trust, quality, and care.</p>
+      <div class="section-underline mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="feature-card bg-white rounded-2xl p-7 shadow-md" data-aos="fade-up" data-aos-delay="0">
+        <div class="w-14 h-14 rounded-xl mb-5 flex items-center justify-center text-2xl" style="background:linear-gradient(135deg,rgba(11,60,140,0.1),rgba(58,167,255,0.15));">
+          <i class="fas fa-check-double" style="color:#0B3C8C;"></i>
+        </div>
+        <h3 class="font-bold text-gray-800 text-lg mb-2">100% Pure Drinking Water</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Every bottle meets strict purity standards, ensuring clean, safe water for you and your family every single time.</p>
+      </div>
+
+      <div class="feature-card bg-white rounded-2xl p-7 shadow-md" data-aos="fade-up" data-aos-delay="80">
+        <div class="w-14 h-14 rounded-xl mb-5 flex items-center justify-center text-2xl" style="background:linear-gradient(135deg,rgba(11,60,140,0.1),rgba(58,167,255,0.15));">
+          <i class="fas fa-cogs" style="color:#0B3C8C;"></i>
+        </div>
+        <h3 class="font-bold text-gray-800 text-lg mb-2">Advanced Filtration Technology</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Our 5-stage purification system — RO + UV + Ozone — removes all impurities while retaining essential minerals.</p>
+      </div>
+
+      <div class="feature-card bg-white rounded-2xl p-7 shadow-md" data-aos="fade-up" data-aos-delay="160">
+        <div class="w-14 h-14 rounded-xl mb-5 flex items-center justify-center text-2xl" style="background:linear-gradient(135deg,rgba(11,60,140,0.1),rgba(58,167,255,0.15));">
+          <i class="fas fa-shield-virus" style="color:#0B3C8C;"></i>
+        </div>
+        <h3 class="font-bold text-gray-800 text-lg mb-2">Hygienic Packaging</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Tamper-evident caps and sealed bottles ensure your water is safe from contamination during delivery and storage.</p>
+      </div>
+
+      <div class="feature-card bg-white rounded-2xl p-7 shadow-md" data-aos="fade-up" data-aos-delay="240">
+        <div class="w-14 h-14 rounded-xl mb-5 flex items-center justify-center text-2xl" style="background:linear-gradient(135deg,rgba(11,60,140,0.1),rgba(58,167,255,0.15));">
+          <i class="fas fa-flask" style="color:#0B3C8C;"></i>
+        </div>
+        <h3 class="font-bold text-gray-800 text-lg mb-2">Lab Tested Quality</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Every batch is tested in certified laboratories before leaving our facility, ensuring BIS-compliant water quality.</p>
+      </div>
+
+      <div class="feature-card bg-white rounded-2xl p-7 shadow-md" data-aos="fade-up" data-aos-delay="320">
+        <div class="w-14 h-14 rounded-xl mb-5 flex items-center justify-center text-2xl" style="background:linear-gradient(135deg,rgba(11,60,140,0.1),rgba(58,167,255,0.15));">
+          <i class="fas fa-leaf" style="color:#0B3C8C;"></i>
+        </div>
+        <h3 class="font-bold text-gray-800 text-lg mb-2">Eco-Friendly Bottles</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Our bottles are made from 100% food-grade, recyclable PET plastic — good for you and the environment.</p>
+      </div>
+
+      <div class="feature-card bg-white rounded-2xl p-7 shadow-md" data-aos="fade-up" data-aos-delay="400">
+        <div class="w-14 h-14 rounded-xl mb-5 flex items-center justify-center text-2xl" style="background:linear-gradient(135deg,rgba(11,60,140,0.1),rgba(58,167,255,0.15));">
+          <i class="fas fa-truck" style="color:#0B3C8C;"></i>
+        </div>
+        <h3 class="font-bold text-gray-800 text-lg mb-2">Reliable Delivery</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">On-time delivery to homes, offices, restaurants, and events across Odisha through our growing distributor network.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <div class="section-badge">Gallery</div>
+      <h2 class="text-4xl font-black text-gray-900 mt-3 mb-4">
+        <span class="gradient-text">Puriva</span> in the Wild
+      </h2>
+      <p class="text-gray-500 max-w-xl mx-auto">Real photos from our customers and brand shoots across Odisha.</p>
+      <div class="section-underline mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- Save your 4 provided photos as images/gallery-1.jpg through gallery-4.jpg -->
+      <div class="gallery-item col-span-2 h-72" data-aos="fade-up" data-aos-delay="0">
+        <img src="images/test2.png" alt="Puriva Water bottles on bridge with scenic water backdrop" onerror="this.src='https://placehold.co/600x400/0B3C8C/3AA7FF?text=Puriva+Water'" />
+        <div class="gallery-overlay"><span class="font-semibold text-sm">The Scenic Sip</span></div>
+      </div>
+      <div class="gallery-item h-72" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/test4.jpeg" alt="Puriva Water bottles at sunset by the waterside" onerror="this.src='https://placehold.co/400x400/1565c0/7DC4FF?text=Pure+%26+Fresh'" />
+        <div class="gallery-overlay"><span class="font-semibold text-sm">Golden Hour Purity</span></div>
+      </div>
+      <div class="gallery-item h-72" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/test5.jpeg" alt="Hand holding Puriva Water bottle at sunset" onerror="this.src='https://placehold.co/400x400/3AA7FF/ffffff?text=Always+Fresh'" />
+        <div class="gallery-overlay"><span class="font-semibold text-sm">Always by Your Side</span></div>
+      </div>
+      <div class="gallery-item col-span-2 lg:col-span-1 h-72" data-aos="fade-up" data-aos-delay="300">
+        <img src="images/test6.jpeg" alt="Puriva Water bottles displayed at a vendor stall" onerror="this.src='https://placehold.co/400x400/062770/3AA7FF?text=Available+Everywhere'" />
+        <div class="gallery-overlay"><span class="font-semibold text-sm">Available Everywhere</span></div>
+      </div>
+      <div class="gallery-item col-span-2 h-52" data-aos="fade-up" data-aos-delay="400">
+        <img src="images/test7.jpeg" alt="Puriva Water at dusk" onerror="this.src='https://placehold.co/600x300/0B3C8C/ffffff?text=Puriva+Quality'" />
+        <div class="gallery-overlay"><span class="font-semibold text-sm">Dusk Freshness</span></div>
+      </div>
+      <div class="gallery-item col-span-2 h-52" data-aos="fade-up" data-aos-delay="500">
+        <img src="images/test8.jpeg" alt="Puriva Water product display" onerror="this.src='https://placehold.co/600x300/1565c0/ffffff?text=Trusted+by+Thousands'" />
+        <div class="gallery-overlay"><span class="font-semibold text-sm">Trusted by Thousands</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DISTRIBUTOR CTA ===== -->
+<section id="distributor" class="py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="dist-card rounded-3xl p-12 md:p-16 text-center md:text-left flex flex-col md:flex-row items-center gap-8" data-aos="fade-up">
+      <div class="flex-1">
+        <div class="section-badge" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.9);">Become a Partner</div>
+        <h2 class="text-3xl md:text-4xl font-black text-white mt-4 mb-4 leading-tight">
+          Become a Puriva<br />Water Distributor
+        </h2>
+        <p class="text-blue-100 text-base leading-relaxed max-w-lg">
+          Join our growing network of partners and distribute premium drinking water in your area.
+          Enjoy attractive margins, dedicated support, and a brand that consumers trust.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3 shrink-0">
+        <a href="distributor.html" class="bg-white font-bold px-8 py-3.5 rounded-full text-sm inline-flex items-center gap-2 hover:bg-blue-50 transition-colors" style="color:#0B3C8C;">
+          <i class="fas fa-handshake"></i> Apply Now
+        </a>
+        <a href="tel:+918339066472" class="border-2 border-white text-white font-semibold px-8 py-3.5 rounded-full text-sm inline-flex items-center justify-center gap-2 hover:bg-white/10 transition-colors">
+          <i class="fas fa-phone"></i> Call Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <div class="section-badge">Testimonials</div>
+      <h2 class="text-4xl font-black text-gray-900 mt-3 mb-4">
+        What Our <span class="gradient-text">Customers Say</span>
+      </h2>
+      <div class="section-underline mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border border-gray-100" data-aos="fade-up" data-aos-delay="0">
+        <div class="quote-icon">"</div>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          "Puriva water has excellent taste and quality. Highly recommended for daily use. My entire family has switched to Puriva and we couldn't be happier!"
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg" style="background:linear-gradient(135deg,#0B3C8C,#3AA7FF);">R</div>
+          <div>
+            <div class="font-bold text-gray-800 text-sm">Rajesh Kumar</div>
+            <div class="text-gray-400 text-xs">Bhubaneswar, Odisha</div>
+          </div>
+          <div class="ml-auto text-yellow-400 text-sm">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border border-gray-100" data-aos="fade-up" data-aos-delay="120">
+        <div class="quote-icon">"</div>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          "We've been ordering Puriva 20L jars for our office for months. The delivery is always on time and the water quality is consistently excellent. Great brand!"
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg" style="background:linear-gradient(135deg,#0B3C8C,#3AA7FF);">P</div>
+          <div>
+            <div class="font-bold text-gray-800 text-sm">Priya Mohanty</div>
+            <div class="text-gray-400 text-xs">Office Manager, Cuttack</div>
+          </div>
+          <div class="ml-auto text-yellow-400 text-sm">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card bg-white rounded-2xl shadow-lg p-8 border border-gray-100" data-aos="fade-up" data-aos-delay="240">
+        <div class="quote-icon">"</div>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          "As a distributor of Puriva Water, I can confidently say the support from Sarvorly Beverages is excellent. Strong brand, great margins, and fantastic product quality."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg" style="background:linear-gradient(135deg,#0B3C8C,#3AA7FF);">S</div>
+          <div>
+            <div class="font-bold text-gray-800 text-sm">Subhash Patel</div>
+            <div class="text-gray-400 text-xs">Puriva Distributor, Puri</div>
+          </div>
+          <div class="ml-auto text-yellow-400 text-sm">★★★★★</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="py-24" style="background:linear-gradient(180deg,#f0f7ff,#ffffff);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <div class="section-badge">Get In Touch</div>
+      <h2 class="text-4xl font-black text-gray-900 mt-3 mb-4">
+        Contact <span class="gradient-text">Puriva Water</span>
+      </h2>
+      <p class="text-gray-500 max-w-xl mx-auto">Have questions or want to place an order? We'd love to hear from you.</p>
+      <div class="section-underline mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+      <!-- Contact Info + Map -->
+      <div data-aos="fade-right">
+        <div class="space-y-5 mb-8">
+          <div class="flex items-start gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:linear-gradient(135deg,#0B3C8C,#3AA7FF);">
+              <i class="fas fa-map-marker-alt text-white"></i>
+            </div>
+            <div>
+              <div class="font-bold text-gray-800 mb-1">Address</div>
+              <div class="text-gray-500 text-sm">Sarvorly Beverages Pvt. Ltd.<br />Panchamukhi Vihar, Balianta,<br />Khordha, Odisha, India</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:linear-gradient(135deg,#0B3C8C,#3AA7FF);">
+              <i class="fas fa-phone-alt text-white"></i>
+            </div>
+            <div>
+              <div class="font-bold text-gray-800 mb-1">Phone</div>
+              <a href="tel:+918339066472" class="text-sm block hover:text-blue-600" style="color:#0B3C8C;">+91 8339066472</a>
+              <a href="tel:+919337324580" class="text-sm block hover:text-blue-600" style="color:#0B3C8C;">+91 9337324580</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:linear-gradient(135deg,#0B3C8C,#3AA7FF);">
+              <i class="fas fa-envelope text-white"></i>
+            </div>
+            <div>
+              <div class="font-bold text-gray-800 mb-1">Email</div>
+              <a href="mailto:purivawater@gmail.com" class="text-sm hover:text-blue-600" style="color:#0B3C8C;">purivawater@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="map-container" data-aos="fade-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.5!2d85.72!3d20.27!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBalianta%2C+Khordha%2C+Odisha!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+            width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+            title="Puriva Water Location - Balianta, Khordha, Odisha">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div data-aos="fade-left">
+        <div class="bg-white rounded-3xl shadow-xl p-8">
+          <h3 class="font-black text-gray-800 text-2xl mb-6">Send Us a Message</h3>
+          <form id="contact-form" class="space-y-5">
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-1.5">Your Name</label>
+              <input type="text" required placeholder="Enter your full name" class="form-input w-full px-4 py-3 rounded-xl text-sm bg-gray-50" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-1.5">Phone Number</label>
+              <input type="tel" required placeholder="+91 XXXXX XXXXX" class="form-input w-full px-4 py-3 rounded-xl text-sm bg-gray-50" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-1.5">Email Address</label>
+              <input type="email" placeholder="your@email.com" class="form-input w-full px-4 py-3 rounded-xl text-sm bg-gray-50" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-1.5">Message</label>
+              <textarea required rows="4" placeholder="Tell us how we can help you..." class="form-input w-full px-4 py-3 rounded-xl text-sm bg-gray-50 resize-none"></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full text-white font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer style="background:#062770;" class="text-white pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+      <!-- Brand -->
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center bg-blue-600/40">
+            <i class="fas fa-tint text-white text-lg"></i>
+          </div>
+          <div>
+            <span class="text-white font-bold text-xl leading-none block">Puriva</span>
+            <span class="text-blue-300 text-xs font-light tracking-widest">WATER</span>
+          </div>
+        </div>
+        <p class="text-blue-200 text-sm leading-relaxed mb-5">
+          The Essence of Pure Life. Sarvorly Beverages Pvt. Ltd. — committed to delivering safe, pure, and refreshing water across Odisha.
+        </p>
+        <div class="flex gap-3">
+          <a href="https://www.instagram.com/purivawater" target="_blank" rel="noopener" aria-label="Instagram"
+             class="w-9 h-9 rounded-full flex items-center justify-center bg-white/10 hover:bg-blue-500 transition-colors text-sm">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/purivawater" target="_blank" rel="noopener" aria-label="Facebook"
+             class="w-9 h-9 rounded-full flex items-center justify-center bg-white/10 hover:bg-blue-600 transition-colors text-sm">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/918339066472" target="_blank" rel="noopener" aria-label="WhatsApp"
+             class="w-9 h-9 rounded-full flex items-center justify-center bg-white/10 hover:bg-green-500 transition-colors text-sm">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.youtube.com/@purivawater" target="_blank" rel="noopener" aria-label="YouTube"
+             class="w-9 h-9 rounded-full flex items-center justify-center bg-white/10 hover:bg-red-500 transition-colors text-sm">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-bold text-white mb-5 text-sm uppercase tracking-widest">Quick Links</h4>
+        <ul class="space-y-3">
+          <li><a href="#about"        class="text-blue-200 text-sm hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs" style="color:#3AA7FF;"></i> About Us</a></li>
+          <li><a href="#products"     class="text-blue-200 text-sm hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs" style="color:#3AA7FF;"></i> Products</a></li>
+          <li><a href="#process"      class="text-blue-200 text-sm hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs" style="color:#3AA7FF;"></i> Purification Process</a></li>
+          <li><a href="#gallery"      class="text-blue-200 text-sm hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs" style="color:#3AA7FF;"></i> Gallery</a></li>
+          <li><a href="distributor.html" class="text-blue-200 text-sm hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs" style="color:#3AA7FF;"></i> Become a Distributor</a></li>
+          <li><a href="blog.html"     class="text-blue-200 text-sm hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs" style="color:#3AA7FF;"></i> Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h4 class="font-bold text-white mb-5 text-sm uppercase tracking-widest">Products</h4>
+        <ul class="space-y-3">
+          <li><a href="products.html" class="text-blue-200 text-sm hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-tint text-xs" style="color:#3AA7FF;"></i> 250ml Bottle</a></li>
+          <li><a href="products.html" class="text-blue-200 text-sm hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-tint text-xs" style="color:#3AA7FF;"></i> 500ml Bottle</a></li>
+          <li><a href="products.html" class="text-blue-200 text-sm hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-tint text-xs" style="color:#3AA7FF;"></i> 1 Litre Bottle</a></li>
+          <li><a href="products.html" class="text-blue-200 text-sm hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-tint text-xs" style="color:#3AA7FF;"></i> 2 Litre Bottle</a></li>
+          <li><a href="products.html" class="text-blue-200 text-sm hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-tint text-xs" style="color:#3AA7FF;"></i> 20 Litre Jar</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-bold text-white mb-5 text-sm uppercase tracking-widest">Contact</h4>
+        <ul class="space-y-4">
+          <li class="flex gap-3 text-sm text-blue-200">
+            <i class="fas fa-map-marker-alt mt-0.5 shrink-0" style="color:#3AA7FF;"></i>
+            Panchamukhi Vihar, Balianta, Khordha, Odisha, India
+          </li>
+          <li>
+            <a href="tel:+918339066472" class="flex gap-3 text-sm text-blue-200 hover:text-white transition-colors">
+              <i class="fas fa-phone mt-0.5 shrink-0" style="color:#3AA7FF;"></i> +91 8339066472
+            </a>
+          </li>
+          <li>
+            <a href="tel:+919337324580" class="flex gap-3 text-sm text-blue-200 hover:text-white transition-colors">
+              <i class="fas fa-phone mt-0.5 shrink-0" style="color:#3AA7FF;"></i> +91 9337324580
+            </a>
+          </li>
+          <li>
+            <a href="mailto:purivawater@gmail.com" class="flex gap-3 text-sm text-blue-200 hover:text-white transition-colors">
+              <i class="fas fa-envelope mt-0.5 shrink-0" style="color:#3AA7FF;"></i> purivawater@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.purivawater.com" class="flex gap-3 text-sm text-blue-200 hover:text-white transition-colors">
+              <i class="fas fa-globe mt-0.5 shrink-0" style="color:#3AA7FF;"></i> www.purivawater.com
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Newsletter -->
+    <div class="border-t border-white/10 pt-8 mb-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div>
+          <div class="font-bold text-white">Subscribe to Our Newsletter</div>
+          <div class="text-blue-300 text-sm">Stay updated with offers &amp; news from Puriva Water</div>
+        </div>
+        <form id="newsletter-form" class="flex gap-2 w-full md:w-auto">
+          <input type="email" required placeholder="Enter your email" class="flex-1 md:w-64 px-4 py-2.5 rounded-full text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+          <button type="submit" class="btn-accent px-5 py-2.5 rounded-full text-white font-semibold text-sm whitespace-nowrap">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-blue-300 text-sm text-center sm:text-left">
+        © 2026 Puriva Water | Sarvorly Beverages Pvt. Ltd. All rights reserved.
+      </p>
+      <div class="flex gap-5">
+        <a href="#" class="text-blue-300 text-xs hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="text-blue-300 text-xs hover:text-white transition-colors">Terms of Use</a>
+        <a href="#contact" class="text-blue-300 text-xs hover:text-white transition-colors">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== FLOATING BUTTONS ===== -->
+<a id="whatsapp-btn" href="https://wa.me/918339066472" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <span class="pulse-ring"></span>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<button id="back-to-top" aria-label="Back to top">
+  <i class="fas fa-chevron-up text-sm"></i>
+</button>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
